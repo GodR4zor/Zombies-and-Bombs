@@ -18,4 +18,3 @@ while true do
 	end
 	Humanoid.HealthChanged:Wait()
 end
-print("Health")
