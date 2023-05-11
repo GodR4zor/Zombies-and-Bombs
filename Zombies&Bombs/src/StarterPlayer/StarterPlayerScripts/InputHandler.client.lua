@@ -23,7 +23,6 @@ local function isDropBombAllowed(player: Player)
 	if DropBombQuanty >= maxBomb then
 		return false
 	else
-		wait(0.05)
 		return true
 	end
 end

@@ -9,12 +9,10 @@ local function isAlowwedDropBomb(player:Player)
 	local maxBomb = player:GetAttribute("Bombs")
 	local DropBombQuanty = #workspace.SpawnedBombs:GetChildren()
 	
-	print(maxBomb)
 	
 	if DropBombQuanty > maxBomb then
 		return false
 	else
-		wait(0.05)
 		return true
 	end
 end
@@ -35,6 +33,6 @@ dropBombRemoteEvent.OnServerEvent:Connect(function(player:Player)
 		bomb.Parent = workspace.SpawnedBombs
 		
 	else
-		print("Não pode spawnr bomba!")
+	
 		end
 end)	

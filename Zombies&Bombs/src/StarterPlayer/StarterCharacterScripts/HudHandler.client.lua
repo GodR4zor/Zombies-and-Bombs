@@ -34,5 +34,4 @@ end)
 
 addBombButton.MouseButton1Click:Connect(function()
 	RequestBombUpgradeRemoteEvent:FireServer()
-	print("Solicitação de Bomba...")
 end)
